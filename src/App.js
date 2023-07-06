@@ -1,32 +1,33 @@
 import "./App.css";
 import Header from "./Header";
-
-import Article from "./Article";
+import Post from "./Post";
+import SideMenu from "./SideMenu";
 
 function App() {
-
-  const firstArticle = `
-  dfdjfkklsdfkdskkdklf
-  dkdfklkdskdslkdk
-  dddf;dfmmdfmdfm;mdf
-  `
-  const secondArticle = `
-  lorem ipsum
-  `
   return (
     <div className="App">
       <Header />
-      
-      {/* <Article content={firstArticle} personName="kamel" email="kamel@gmail.com" age="20">
-        <div style={{ background: "teal" }}>
-          <h2>PinguCoder</h2>
-          <p style={{ background: "orange" }}> To begin the development</p>
+
+      {/* POSTS CONTAINER */}
+      <div style={{ display: "flex",  justifyContent: "center" }}>
+        <div
+          style={{ width: "60%", display: "flex", justifyContent: "center" }}
+        >
+          {/* POSTS CONTAINER */}
+          <div style={{ width: "70%" }}>
+            <Post  postName= "PinguCoder" postBody="platform e learning"  />
+            <Post postName= "Learn React" postBody="With PinguCoder"/>
+            <Post postName= "Learn Angular" postBody="With PinguCoder" />
+            <Post postName= "Learn VueJs" postBody="With PinguCoder" />
+            <Post postName= "Learn ExpressJS" postBody="With PinguCoder" />
+            <Post />
+          </div>
+
+          <div style={{ width: "30%", marginTop: "25px" }}>
+            <SideMenu />
+          </div>
+        </div>
       </div>
-      </Article> */}
-      <Article content={secondArticle} personName="marwa" email="marwa@gmail.com" age="22"/>
-      <Article personName="Arwa" email="arwa@gmail.com" age="20"/>
-     
-    
     </div>
   );
 }
