@@ -9,17 +9,20 @@ function App() {
       <Header />
 
       {/* POSTS CONTAINER */}
-      <div style={{ display: "flex",  justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <div
           style={{ width: "60%", display: "flex", justifyContent: "center" }}
         >
           {/* POSTS CONTAINER */}
           <div style={{ width: "70%" }}>
-            <Post  postName= "PinguCoder" postBody="platform e learning"  />
-            <Post postName= "Learn React" postBody="With PinguCoder"/>
-            <Post postName= "Learn Angular" postBody="With PinguCoder" />
-            <Post postName= "Learn VueJs" postBody="With PinguCoder" />
-            <Post postName= "Learn ExpressJS" postBody="With PinguCoder" />
+            <Post postName="PinguCoder" postBody="platform e learning" />
+            <Post postName="Learn React" postBody="With PinguCoder" />
+            <Post postName="Learn Angular" postBody="With PinguCoder" />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
             <Post />
           </div>
 
